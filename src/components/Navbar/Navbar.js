@@ -6,7 +6,6 @@ import navIcon from "./nav_icon.png";
 const toggleNavbar = () => {
   const element = document.getElementsByClassName("main_nav")[0];
   element.classList.toggle("active");
-  console.log(element);
 };
 
 function Navbar() {
@@ -19,7 +18,7 @@ function Navbar() {
           </div>
 
           <div className="header_right">
-            <a href="#!" class="nav_ico" width="40px">
+            <a href="#!" className="nav_ico" width="40px">
               <img
                 src={navIcon}
                 alt="NavIcon"
