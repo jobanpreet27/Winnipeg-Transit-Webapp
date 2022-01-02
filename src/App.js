@@ -1,8 +1,8 @@
 // import { Navbar, Nav, Container } from "react-bootstrap";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Weather from "./components/Weather";
-import Home from "./components/Home";
-import Favorite from "./components/Favorite";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Weather from "./Pages/Weather";
+import Home from "./Pages/Home";
+import Favorite from "./Pages/Favorite";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 

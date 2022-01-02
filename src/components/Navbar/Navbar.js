@@ -22,6 +22,7 @@ function Navbar() {
             <a href="#!" class="nav_ico" width="40px">
               <img
                 src={navIcon}
+                alt="NavIcon"
                 onClick={() => {
                   toggleNavbar();
                 }}
