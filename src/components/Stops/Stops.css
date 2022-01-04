@@ -9,3 +9,8 @@
   flex-direction: row;
   padding: 3px 5px;
 }
+.stop_link {
+  text-decoration: none;
+  line-height: 1.4;
+  color: black;
+}

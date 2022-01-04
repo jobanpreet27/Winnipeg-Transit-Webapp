@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 function Stop(props) {
   const address = "/stop/" + props.stop.key;
   return (
-    <Link to={address}>
+    <Link to={address} className="stop_link">
       <div id={props.stop.key} className="stop">
-        <h3>{props.stop.name}</h3>
-        <h3>{props.stop.distances.direct}m</h3>
+        <h4>{props.stop.name}</h4>
+        <h4>{props.stop.distances.direct}m</h4>
       </div>
     </Link>
   );
