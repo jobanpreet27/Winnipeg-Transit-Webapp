@@ -2,6 +2,7 @@ import React from "react";
 import Moment from "moment";
 import "moment-precise-range-plugin";
 import "./Bus.css";
+
 function Bus(props) {
   const bus = props.bus;
   const busTime = Moment(bus.estimatedDepart);
@@ -12,9 +13,7 @@ function Bus(props) {
   );
   const diff = Moment(bus.estimatedDepart).diff(scheduledDepart);
   const status = diff > 0 ? "LATE" : diff < 0 ? "EARLY" : "OK";
-  // console.log(Moment.preciseDiff(busTime, currentTime, true));
-  console.log(Moment(bus.estimatedDepart).diff(scheduledDepart) + " " + status);
-  // Moment.preciseDiff(bus.estimatedDepart, bus.scheduledDepart, true);
+
   return (
     <div className="bus">
       <h6 className="bus_name">

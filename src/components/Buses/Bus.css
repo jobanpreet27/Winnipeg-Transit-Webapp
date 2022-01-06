@@ -1,5 +1,6 @@
 .bus {
   border: 1px solid black;
+  border-bottom: 0px;
   width: 95%;
   max-width: 900px;
   align-items: center;
@@ -16,8 +17,10 @@
 .bus .bus_status {
   width: 9%;
   margin: 0 auto;
+  min-width: 55px;
 }
 .bus .bus_time {
   width: 21%;
   margin: 0 auto;
+  text-align: right;
 }
