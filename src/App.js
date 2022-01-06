@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Favorite from "./Pages/Favorite";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
+import Stop from "./Pages/Stop";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/weather" element={<Weather />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/" element={<Home />} />
+        <Route path="/stop/:key" element={<Stop />} />
       </Routes>
     </BrowserRouter>
   );
