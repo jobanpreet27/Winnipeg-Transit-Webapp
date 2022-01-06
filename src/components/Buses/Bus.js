@@ -1,24 +1,31 @@
 import React from "react";
 import Moment from "moment";
-
+import "moment-precise-range-plugin";
+import "./Bus.css";
 function Bus(props) {
   const bus = props.bus;
-  const busTime = Moment(bus.estimatedDepart.substring(11), "HH:mm:ss a");
-  const currentTime = Moment(Moment().format("HH:mm:ss"), "HH:mm:ss a");
+  const busTime = Moment(bus.estimatedDepart);
+  const currentTime = Moment();
+  const scheduledDepart = Moment(bus.scheduledDepart);
   const duration = parseInt(
     Moment.duration(busTime.diff(currentTime)).asSeconds() / 60 + 1
   );
-  console.log(Moment.duration(busTime.diff(currentTime)).get("seconds"));
+  const diff = Moment(bus.estimatedDepart).diff(scheduledDepart);
+  const status = diff > 0 ? "LATE" : diff < 0 ? "EARLY" : "OK";
+  // console.log(Moment.preciseDiff(busTime, currentTime, true));
+  console.log(Moment(bus.estimatedDepart).diff(scheduledDepart) + " " + status);
+  // Moment.preciseDiff(bus.estimatedDepart, bus.scheduledDepart, true);
   return (
-    <div className="stop">
-      <h4>
+    <div className="bus">
+      <h6 className="bus_name">
         {props.bus.number} {props.bus.variantname}
-      </h4>
-      <h4>
+      </h6>
+      <h6 className="bus_status">{status}</h6>
+      <h6 className="bus_time">
         {duration <= 15 && duration > 0
           ? duration + " min"
           : Moment(bus.estimatedDepart, "YYYY-MM-DD hh:mm:ss").format("h:mm a")}
-      </h4>
+      </h6>
     </div>
   );
 }

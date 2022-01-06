@@ -5,8 +5,8 @@ function Stop(props) {
   return (
     <Link to={address} className="stop_link">
       <div id={props.stop.key} className="stop">
-        <h4>{props.stop.name}</h4>
-        <h4>{props.stop.distances.direct}m</h4>
+        <h6>{props.stop.name}</h6>
+        <h6>{props.stop.distances.direct}m</h6>
       </div>
     </Link>
   );
