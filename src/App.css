@@ -1,3 +1,10 @@
 body {
   padding-top: 90px;
+  background-color: #cdcdcd !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }

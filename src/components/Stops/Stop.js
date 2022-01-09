@@ -1,14 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 function Stop(props) {
   const address = "/stop/" + props.stop.key;
   return (
-    <Link to={address} className="stop_link">
-      <div id={props.stop.key} className="stop">
-        <h6>{props.stop.name}</h6>
-        <h6>{props.stop.distances.direct}m</h6>
-      </div>
-    </Link>
+    <li className="stop">
+      <Link to={address} className="stop_link">
+        <div className="stop_info">
+          <h5>{props.stop.name}</h5>
+          <h6 className="stop_buses">Buses: 1 , 2 , 3</h6>
+        </div>
+        <div className="stop_distance">
+          <h6>{props.stop.distances.direct}m</h6>
+        </div>
+      </Link>
+    </li>
   );
 }
 
