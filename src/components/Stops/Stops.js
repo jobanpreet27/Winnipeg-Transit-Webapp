@@ -1,6 +1,6 @@
 import React from "react";
 import useFetch from "../Utils/useFetch";
-import "./Stops.css";
+import "./stops.css";
 import DisplayStops from "./DisplayStops";
 
 function Stops(props) {

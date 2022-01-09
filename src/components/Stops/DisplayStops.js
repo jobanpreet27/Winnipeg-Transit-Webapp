@@ -3,11 +3,11 @@ import React from "react";
 import Stop from "./Stop";
 function DisplayStops(props) {
   return (
-    <div>
+    <ul className="stops_list">
       {props.data.map(function (stop) {
         return <Stop stop={stop} />;
       })}
-    </div>
+    </ul>
   );
 }
 export default DisplayStops;
