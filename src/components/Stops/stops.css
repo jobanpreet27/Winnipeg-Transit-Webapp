@@ -16,6 +16,7 @@
   list-style-type: none;
   display: block;
   float: left;
+  position: relative;
   /*height: 10em; */
 }
 .stop_buses {
@@ -24,4 +25,9 @@
 .stop a {
   text-decoration: none;
   color: inherit;
+}
+.stop_fav {
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
