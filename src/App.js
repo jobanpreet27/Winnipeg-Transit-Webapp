@@ -1,4 +1,3 @@
-// import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Weather from "./Pages/Weather";
@@ -17,14 +16,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar />
+        <Routes>
+          <Route path="/weather" element={<Weather />} />
+          <Route path="/favorite" element={<Favorites />} />
+          <Route path="/" element={<Home coords={coords} />} />
+          <Route path="/stop/:key" element={<Stop />} />
+        </Routes>
       </div>
-
-      <Routes>
-        <Route path="/weather" element={<Weather />} />
-        <Route path="/favorite" element={<Favorites />} />
-        <Route path="/" element={<Home coords={coords} />} />
-        <Route path="/stop/:key" element={<Stop />} />
-      </Routes>
     </BrowserRouter>
   );
 }

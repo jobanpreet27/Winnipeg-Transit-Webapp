@@ -15,7 +15,7 @@ function Bus(props) {
   const status = diff > 0 ? "LATE" : diff < 0 ? "EARLY" : "OK";
 
   return (
-    <div className="bus">
+    <div className="bus" key={props.bus.scheduledDepart}>
       <h6 className="bus_name">
         {props.bus.number} {props.bus.variantname}
       </h6>

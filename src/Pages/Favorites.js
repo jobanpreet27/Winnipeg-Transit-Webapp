@@ -3,7 +3,11 @@ import DisplayStops from "../components/Stops/DisplayStops";
 
 function Favorites() {
   const favList = JSON.parse(localStorage.getItem("favorite-stops"));
-  return <DisplayStops data={favList} />;
+  return (
+    <div className="container">
+      <DisplayStops data={favList} />
+    </div>
+  );
 }
 
 export default Favorites;
