@@ -6,7 +6,7 @@ import FavoriteIcon from "./FavoriteIcon";
 function Stop(props) {
   const address = "/stop/" + props.stop.key;
   return (
-    <li className="stop">
+    <li key={props.stop.key} className="stop">
       <Link to={address} className="stop_link">
         <div className="stop_info">
           <h5>{props.stop.name}</h5>
@@ -15,10 +15,15 @@ function Stop(props) {
           </h6>
         </div>
         <div className="stop_distance">
-          <h6>{props.stop.distances.direct}m</h6>
+          {/*check if no distance (for favorite list)*/}
+          {props.stop.distances ? (
+            <h6>{props.stop.distances.direct}m</h6>
+          ) : (
+            <></>
+          )}
         </div>
         <div className="stop_fav">
-          <FavoriteIcon stopKey={props.stop.key} />
+          <FavoriteIcon name={props.stop.name} stopKey={props.stop.key} />
         </div>
       </Link>
     </li>

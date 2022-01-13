@@ -3,6 +3,7 @@ import { AiFillHeart } from "react-icons/ai";
 import { AiOutlineHeart } from "react-icons/ai";
 import toggleFavStop from "../Utils/toggleFavStop";
 import { useState } from "react";
+
 function FavoriteIcon(props) {
   const [isFav, setIsFav] = useState(
     findFavStop(props.stopKey) === -1 ? false : true
@@ -10,7 +11,7 @@ function FavoriteIcon(props) {
   const handleClick = (e) => {
     e.stopPropagation();
     e.preventDefault();
-    toggleFavStop(props.stopKey);
+    toggleFavStop(props.name, props.stopKey);
     setIsFav(!isFav);
   };
   return (
