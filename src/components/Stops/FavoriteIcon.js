@@ -15,8 +15,12 @@ function FavoriteIcon(props) {
     setIsFav(!isFav);
   };
   return (
-    <button className="button1" onClick={(e) => handleClick(e)}>
-      {isFav ? <AiFillHeart /> : <AiOutlineHeart />}
+    <button
+      type="button"
+      className="btn btn-link btn-md p-1"
+      onClick={(e) => handleClick(e)}
+    >
+      {isFav ? <AiFillHeart size="2rem" /> : <AiOutlineHeart size="2rem" />}
     </button>
   );
 }

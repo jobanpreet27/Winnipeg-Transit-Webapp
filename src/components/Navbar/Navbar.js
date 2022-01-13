@@ -58,7 +58,7 @@ function Navbar() {
                     toggleNavbar();
                   }}
                 >
-                  Favorite
+                  Favorites
                 </Link>
               </li>
             </ul>

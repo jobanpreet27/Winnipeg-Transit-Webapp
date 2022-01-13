@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Weather from "./Pages/Weather";
 import Home from "./Pages/Home";
@@ -10,7 +10,9 @@ import GetLocation from "./components/Utils/GetLocation";
 
 function App() {
   const [coords, setCoords] = useState("");
-  GetLocation(setCoords);
+  useEffect(() => {
+    GetLocation(setCoords);
+  }, [coords]);
 
   return (
     <BrowserRouter>
