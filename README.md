@@ -1,4 +1,4 @@
-# Hosteed at 
+# Hosted at 
 [Winniepg Transit WebApp](https://winnipegtransit.netlify.app).
 
 ## Available Scripts
