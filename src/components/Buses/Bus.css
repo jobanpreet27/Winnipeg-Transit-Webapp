@@ -1,6 +1,5 @@
 .bus {
   border-bottom: 1px solid black;
-  max-width: 900px;
   align-items: center;
   justify-content: space-between;
   display: flex;
@@ -27,4 +26,5 @@
   padding: 0 auto;
   width: 95%;
   margin: 0 auto;
+  max-width: 900px;
 }
