@@ -41,17 +41,6 @@ function Navbar() {
               </li>
               <li>
                 <Link
-                  to="/weather"
-                  src={navIcon}
-                  onClick={() => {
-                    toggleNavbar();
-                  }}
-                >
-                  Weather
-                </Link>
-              </li>
-              <li>
-                <Link
                   to="/favorite"
                   src={navIcon}
                   onClick={() => {
