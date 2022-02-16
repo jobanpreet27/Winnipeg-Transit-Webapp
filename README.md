@@ -1,6 +1,6 @@
 # Hosted at
 
-[Winniepg Transit WebApp](https://winnipegtransit.netlify.app).
+[Winniepg Transit WebApp](https://transit.jobanpreet.ca).
 
 ## Available Scripts
 
