@@ -1,16 +1,32 @@
-html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding-top: 90px;
+  background-color: #cdcdcd !important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
 
-* {
-  box-sizing: border-box;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
