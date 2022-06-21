@@ -2,7 +2,9 @@ import DisplayStops from "../components/Stops/DisplayStops";
 import { AiOutlineHeart } from "react-icons/ai";
 
 function Favorite() {
-  const favList = JSON.parse(localStorage.getItem("favorite-stops"));
+  const favList = (typeof window !== 'undefined') ? 
+    JSON.parse(localStorage.getItem("favorite-stops"))
+    : "";
   return favList && favList.length != "0" ? (
     <div className="container">
       <DisplayStops data={favList} />
