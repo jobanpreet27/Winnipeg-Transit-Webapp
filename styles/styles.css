@@ -85,6 +85,7 @@
     display: block;
     width: 40px;
     cursor: pointer;
+    color: white
   }
   /* ipad potrait view*/
   @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -94,7 +95,7 @@
     }
   }
   @media only screen and (min-width: 768px) {
-    .nav_ico img {
+    .nav_ico{
       display: none;
     }
   }
