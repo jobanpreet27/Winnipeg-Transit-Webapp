@@ -1,7 +1,6 @@
 import React from "react";
 import Moment from "moment";
 import "moment-precise-range-plugin";
-import "./Bus.css";
 
 function Bus(props) {
   const bus = props.bus;

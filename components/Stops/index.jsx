@@ -1,6 +1,5 @@
 import React from "react";
 import useFetch from "../Utils/useFetch";
-import "./stops.css";
 import DisplayStops from "./DisplayStops";
 import Loader from "../Utils/Loader";
 

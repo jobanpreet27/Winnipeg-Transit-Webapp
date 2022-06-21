@@ -1,8 +1,7 @@
-import React from "react";
 import DisplayStops from "../components/Stops/DisplayStops";
 import { AiOutlineHeart } from "react-icons/ai";
 
-function Favorites() {
+function Favorite() {
   const favList = JSON.parse(localStorage.getItem("favorite-stops"));
   return favList && favList.length != "0" ? (
     <div className="container">
@@ -18,4 +17,4 @@ function Favorites() {
   );
 }
 
-export default Favorites;
+export default Favorite;
