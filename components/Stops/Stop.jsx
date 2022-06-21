@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link"
-import FetchRoutes from "./FetchRoutes.stop";
-import FavoriteIcon from "./FavoriteIcon.stop";
+import FetchRoutes from "./FetchRoutes";
+import FavoriteIcon from "./FavoriteIcon";
 
 function Stop(props) {
   const address = "/stop/" + props.stop.key;

@@ -1,5 +1,5 @@
 import React from "react";
-import Stop from "./Stop.stop";
+import Stop from "./Stop";
 
 function DisplayStops(props) {
   if (!props.data) {

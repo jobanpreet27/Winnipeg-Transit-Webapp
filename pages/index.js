@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Stops from "../components/Stops/Stops.stop";
+import Stops from "../components/Stops";
 import GetLocation from "../components/Utils/getLocation";
 import Header from "../components/Header/index.js";
 
